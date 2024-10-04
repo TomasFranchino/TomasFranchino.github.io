@@ -1,4 +1,4 @@
-const apiBaseUrls = 'https://localhost:7072/api/dueño';
+const apiBaseUrls = 'https://webappveterinaria-cfe7eqapdcetfvat.brazilsouth-01.azurewebsites.net/';
 
 
 async function getDueños(id) {

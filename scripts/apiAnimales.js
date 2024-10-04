@@ -16,7 +16,7 @@ async function postAnimal(animal) {
 }
 
 async function getAnimales() {
-    const response = await fetch(`${apiBaseUrl}/GeAnimales`);
+    const response = await fetch(`${apiBaseUrl}/GetAnimales`);
     if (response.ok) {
         const animals = await response.json();
         return animals.data;
