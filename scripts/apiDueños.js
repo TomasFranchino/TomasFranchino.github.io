@@ -1,5 +1,5 @@
-//const apiBaseUrls = 'https://webappveterinaria-cfe7eqapdcetfvat.brazilsouth-01.azurewebsites.net/api/dueño';
-const apiBaseUrls = 'https://localhost:7072/api/dueño';
+const apiBaseUrls = 'https://webappveterinaria-cfe7eqapdcetfvat.brazilsouth-01.azurewebsites.net/api/dueño';
+//const apiBaseUrls = 'https://localhost:7072/api/dueño';
 
 async function getDueño(id) {
     const response = await fetch(`${apiBaseUrls}/GetDueño/${id}`);
