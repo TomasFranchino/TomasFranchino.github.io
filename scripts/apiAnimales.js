@@ -1,4 +1,5 @@
-const apiBaseUrl = 'https://webappveterinaria-cfe7eqapdcetfvat.brazilsouth-01.azurewebsites.net/api/animal';
+//const apiBaseUrl = 'https://webappveterinaria-cfe7eqapdcetfvat.brazilsouth-01.azurewebsites.net/api/animal';
+const apiBaseUrl = 'https://localhost:7072/api/animal';
 
 async function postAnimal(animal) {
     const response = await fetch(`${apiBaseUrl}/PostAnimales`, {
@@ -60,3 +61,31 @@ async function putAnimal(animal, id) {
     }
 
 }
+
+async function asignarDueño(idAnimal, idDueño) {
+    const response = await fetch(`${apiBaseUrl}/AsignarDueño/${idAnimal}/${idDueño}`);
+    if (response.ok) {
+        const animal = await response.json();
+        console.log(animal.data);
+        return animal.data;
+    } else {
+        throw new Error("Error al asignar el dueño")
+    }
+}
+
+//async function asignarDueño(idAnimal, dniDueño) {
+//  const response = await fetch(`${apiBaseUrl}/AsignarDueño/${idAnimal}/${dniDueño}`, {
+//    method: 'POST',
+//  headers: {
+//    'Content-Type': 'application/json'
+//        }
+//  });
+
+//if (response.ok) {
+//  const animal = await response.json();
+//return { isSuccess: true, data: animal };
+//} else {
+//  const errorMessage = await response.text();
+//return { isSuccess: false, message: errorMessage };
+// }
+//}
