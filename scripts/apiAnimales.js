@@ -1,5 +1,5 @@
-//const apiBaseUrl = 'https://webappveterinaria-cfe7eqapdcetfvat.brazilsouth-01.azurewebsites.net/api/animal';
-const apiBaseUrl = 'https://localhost:7072/api/animal';
+const apiBaseUrl = 'https://webappveterinaria-cfe7eqapdcetfvat.brazilsouth-01.azurewebsites.net/api/animal';
+//const apiBaseUrl = 'https://localhost:7072/api/animal';
 
 async function postAnimal(animal) {
     const response = await fetch(`${apiBaseUrl}/PostAnimales`, {
