@@ -1,4 +1,5 @@
 // Gestion animales
+// Revisar en los async await utilizar try catch
 
 function mostrarRegistroAnimal() {
     const content = document.getElementById('content');
