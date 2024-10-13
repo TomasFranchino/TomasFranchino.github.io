@@ -1,5 +1,16 @@
 // Gestion animales
 // Revisar en los async await utilizar try catch
+// Nueva sintaxis para try catch ejemplo: const [error, response] ?= fetch(/animals)
+// Vieja correcta sintaxis fetch(/animals)
+        //.then(res => {
+        // if (res.ok) return res.json() 
+        // throw new Error(res.statusText)
+        //})
+        //.then(response => [
+        // return response
+        // })
+        //.catch(err => console.error(err))
+//
 
 function mostrarRegistroAnimal() {
     const content = document.getElementById('content');
