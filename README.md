@@ -20,6 +20,7 @@ Este proyecto es una aplicación integral para la administración de clínicas v
   - Consultar el historial de atenciones y gestionar seguimientos.
 
 - **API REST**:  
+  - Arquitectura MVC(Modelo, Vista, Controlador).
   - El backend está desarrollado en C# con ASP.NET Core, exponiendo recursos mediante una API REST.
   - La API implementa operaciones CRUD (crear, leer, actualizar, eliminar) para cada entidad.
   - Incluye validación y manejo de errores para garantizar la integridad de la información.
